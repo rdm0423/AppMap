@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="792" y="370"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="nuv-bd-cbX">
             <objects>
-                <viewController id="dRv-8k-Stc" sceneMemberID="viewController">
+                <viewController id="dRv-8k-Stc" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yKu-bF-TrS"/>
                         <viewControllerLayoutGuide type="bottom" id="kVA-Z2-inl"/>
@@ -256,16 +256,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="D35-Ah-L77" kind="show" id="V7f-Gw-6Ck"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-FO-Fwj">
-                                <rect key="frame" x="256" y="259" width="30" height="30"/>
-                                <state key="normal" title="Two">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="D35-Ah-L77" kind="show" id="bBX-sb-f3X"/>
+                                    <segue destination="D35-Ah-L77" kind="show" identifier="oneButtonPressed" id="V7f-Gw-6Ck"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prJ-Qq-3Te">
@@ -274,7 +265,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="D35-Ah-L77" kind="show" id="CWK-33-k51"/>
+                                    <segue destination="D35-Ah-L77" kind="show" identifier="threeButtonPressed" id="CWK-33-k51"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDP-eK-Ors">
@@ -283,6 +274,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7g-FO-Fwj">
+                                <rect key="frame" x="256" y="259" width="30" height="30"/>
+                                <state key="normal" title="Two">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="D35-Ah-L77" kind="show" identifier="twoButtonPressed" id="bBX-sb-f3X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -304,10 +304,10 @@
             </objects>
             <point key="canvasLocation" x="764" y="1102"/>
         </scene>
-        <!--View Controller-->
+        <!--Third Options View Controller-->
         <scene sceneID="caZ-UO-i99">
             <objects>
-                <viewController id="D35-Ah-L77" sceneMemberID="viewController">
+                <viewController id="D35-Ah-L77" customClass="ThirdOptionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BzV-Iz-2Fv"/>
                         <viewControllerLayoutGuide type="bottom" id="EIa-42-7vY"/>
@@ -329,6 +329,9 @@
                             <constraint firstAttribute="centerY" secondItem="9sL-of-Vrf" secondAttribute="centerY" constant="0.5" id="kMq-EQ-FYD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="9sL-of-Vrf" id="QmJ-nV-gK6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sd-j4-Omu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -340,6 +343,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bBX-sb-f3X"/>
+        <segue reference="CWK-33-k51"/>
     </inferredMetricsTieBreakers>
 </document>
