@@ -17,6 +17,9 @@
 		71CA535F19DCA6B700F1638C /* AppMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA535E19DCA6B700F1638C /* AppMapTests.m */; };
 		FFA55AD61A9D2CD800D4AF43 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA55AD51A9D2CD800D4AF43 /* ThirdViewController.m */; };
 		FFA55AD91A9D2DD700D4AF43 /* ThirdOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA55AD81A9D2DD700D4AF43 /* ThirdOptionsViewController.m */; };
+		FFA55ADC1A9D347D00D4AF43 /* FourthViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA55ADB1A9D347D00D4AF43 /* FourthViewDataSource.m */; };
+		FFA55AE21A9D374D00D4AF43 /* FourthDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA55AE11A9D374D00D4AF43 /* FourthDetailViewController.m */; };
+		FFA55AE81A9D3C4C00D4AF43 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA55AE71A9D3C4C00D4AF43 /* FourthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		FFA55AD51A9D2CD800D4AF43 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		FFA55AD71A9D2DD700D4AF43 /* ThirdOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdOptionsViewController.h; sourceTree = "<group>"; };
 		FFA55AD81A9D2DD700D4AF43 /* ThirdOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdOptionsViewController.m; sourceTree = "<group>"; };
+		FFA55ADA1A9D347D00D4AF43 /* FourthViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewDataSource.h; sourceTree = "<group>"; };
+		FFA55ADB1A9D347D00D4AF43 /* FourthViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewDataSource.m; sourceTree = "<group>"; };
+		FFA55AE01A9D374D00D4AF43 /* FourthDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthDetailViewController.h; sourceTree = "<group>"; };
+		FFA55AE11A9D374D00D4AF43 /* FourthDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthDetailViewController.m; sourceTree = "<group>"; };
+		FFA55AE61A9D3C4C00D4AF43 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		FFA55AE71A9D3C4C00D4AF43 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,14 +101,10 @@
 			children = (
 				71CA534319DCA6B700F1638C /* AppDelegate.h */,
 				71CA534419DCA6B700F1638C /* AppDelegate.m */,
-				71CA534619DCA6B700F1638C /* FirstViewController.h */,
-				71CA534719DCA6B700F1638C /* FirstViewController.m */,
-				71CA534919DCA6B700F1638C /* SecondViewController.h */,
-				71CA534A19DCA6B700F1638C /* SecondViewController.m */,
-				FFA55AD41A9D2CD800D4AF43 /* ThirdViewController.h */,
-				FFA55AD51A9D2CD800D4AF43 /* ThirdViewController.m */,
-				FFA55AD71A9D2DD700D4AF43 /* ThirdOptionsViewController.h */,
-				FFA55AD81A9D2DD700D4AF43 /* ThirdOptionsViewController.m */,
+				FFA55AE91A9D403000D4AF43 /* First View */,
+				FFA55AEA1A9D403900D4AF43 /* Second View */,
+				FFA55AEB1A9D404100D4AF43 /* Third View */,
+				FFA55AEC1A9D404B00D4AF43 /* Fourth View */,
 				71CA534C19DCA6B700F1638C /* Main.storyboard */,
 				71CA534F19DCA6B700F1638C /* Images.xcassets */,
 				71CA535119DCA6B700F1638C /* LaunchScreen.xib */,
@@ -132,6 +137,48 @@
 				71CA535D19DCA6B700F1638C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFA55AE91A9D403000D4AF43 /* First View */ = {
+			isa = PBXGroup;
+			children = (
+				71CA534619DCA6B700F1638C /* FirstViewController.h */,
+				71CA534719DCA6B700F1638C /* FirstViewController.m */,
+			);
+			name = "First View";
+			sourceTree = "<group>";
+		};
+		FFA55AEA1A9D403900D4AF43 /* Second View */ = {
+			isa = PBXGroup;
+			children = (
+				71CA534919DCA6B700F1638C /* SecondViewController.h */,
+				71CA534A19DCA6B700F1638C /* SecondViewController.m */,
+			);
+			name = "Second View";
+			sourceTree = "<group>";
+		};
+		FFA55AEB1A9D404100D4AF43 /* Third View */ = {
+			isa = PBXGroup;
+			children = (
+				FFA55AD41A9D2CD800D4AF43 /* ThirdViewController.h */,
+				FFA55AD51A9D2CD800D4AF43 /* ThirdViewController.m */,
+				FFA55AD71A9D2DD700D4AF43 /* ThirdOptionsViewController.h */,
+				FFA55AD81A9D2DD700D4AF43 /* ThirdOptionsViewController.m */,
+			);
+			name = "Third View";
+			sourceTree = "<group>";
+		};
+		FFA55AEC1A9D404B00D4AF43 /* Fourth View */ = {
+			isa = PBXGroup;
+			children = (
+				FFA55AE61A9D3C4C00D4AF43 /* FourthViewController.h */,
+				FFA55AE71A9D3C4C00D4AF43 /* FourthViewController.m */,
+				FFA55AE01A9D374D00D4AF43 /* FourthDetailViewController.h */,
+				FFA55AE11A9D374D00D4AF43 /* FourthDetailViewController.m */,
+				FFA55ADA1A9D347D00D4AF43 /* FourthViewDataSource.h */,
+				FFA55ADB1A9D347D00D4AF43 /* FourthViewDataSource.m */,
+			);
+			name = "Fourth View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +285,11 @@
 				FFA55AD61A9D2CD800D4AF43 /* ThirdViewController.m in Sources */,
 				71CA534519DCA6B700F1638C /* AppDelegate.m in Sources */,
 				71CA534819DCA6B700F1638C /* FirstViewController.m in Sources */,
+				FFA55ADC1A9D347D00D4AF43 /* FourthViewDataSource.m in Sources */,
 				71CA534219DCA6B700F1638C /* main.m in Sources */,
+				FFA55AE81A9D3C4C00D4AF43 /* FourthViewController.m in Sources */,
 				FFA55AD91A9D2DD700D4AF43 /* ThirdOptionsViewController.m in Sources */,
+				FFA55AE21A9D374D00D4AF43 /* FourthDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
