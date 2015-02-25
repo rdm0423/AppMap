@@ -26,7 +26,11 @@ static NSString *cellID = @"cellID";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     UIImage *image = [UIImage imageNamed:[self imageNames][indexPath.row]];
+    
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [imageView setContentMode:UIViewContentModeScaleToFill];
+
+    [cell setBackgroundColor:[UIColor redColor]];
     [cell.contentView addSubview:imageView];
     
     return cell;
